@@ -421,6 +421,53 @@ body { background: var(--white); }
   align-items: center;
   gap: 10px;
 }
+/* Carousel Container */
+.carousel-container {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+}
+
+/* Carousel Wrapper */
+.carousel-wrapper {
+  display: flex;
+  transition: transform 0.5s ease;
+}
+
+/* List Items Styling */
+.popular-list {
+  display: flex;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+/* Card Styling */
+.popular-card {
+  margin: 0 15px;
+  width: 200px; /* Adjust width as needed */
+}
+
+/* Navigation Buttons */
+.carousel-control {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+  z-index: 10;
+}
+
+.carousel-control.prev {
+  left: 10px;
+}
+
+.carousel-control.next {
+  right: 10px;
+}
 
 
 
